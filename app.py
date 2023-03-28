@@ -5,15 +5,6 @@ import yt_web_scraping, yt_sentimental_analysis , delete_files_image
 app = Flask(__name__)
 
 
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///yt_comments_sa.db'
-# db= SQLAlchemy(app)
-#
-# class Comment_SA(db.Model):
-#     id = db.Column(db.Integer,primary_key=True)
-#     comment = db.Column(db.String(500),nullable=False)
-
-# def __repr__(self):
-#     return
 @app.route("/")
 def home():
     return render_template('yt_sentiment_analysis.html')
